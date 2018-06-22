@@ -4,6 +4,9 @@
 
   ;; what is a macro?
 
+  ;;!!!!!!
+  ;; DJ NOTES: Macros are function that take code as input. For instance if we had (let x 5). And passed x to a macro, the macros recieves the symbol x not the value 5
+
 
   ;; a macro is [just] a function that:
   ;; - runs at compile time

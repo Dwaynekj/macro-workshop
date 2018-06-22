@@ -11,11 +11,11 @@
    got any multiple evaluation problems. Looking for an unquote in front of the
    same symbol in multiple places is usually a good clue.
 
-3. Why can't I take the value of a macro? Is it a Clojure compiler limitation?
+3. Why is it that we "Can't take value of a macro"? Is it a Clojure compiler limitation?
    Or something more fundamental?
 
-4. Isn't there a trick we can do to avoid using a macro to implement `log-row`?
-   (still building on top of `log`)
+4. Isn't there some trick we can do to avoid using a macro to implement
+   `log-row`?  (assuming you still need to build on top of `log`)
 
     ```clojure
     (defmacro log [& args]
@@ -24,6 +24,7 @@
     (log-row ["column one" "column two" "column three"])
     ```
 
-   Why or why not? Hint: could the fact that we have `eval` help?
+   How? (or, alternatively, why isn't it possible?) Hint: could the fact that
+   we have `eval` help?
 
 
